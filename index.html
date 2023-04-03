@@ -1,0 +1,1382 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="testimonial.css"> -->
+
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="index.css"> -->
+    <title>MH Paper Bag</title>
+    <style>
+        /* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: -85px;
+  margin-block: 10px;
+  transition: all 0.1s ease;
+}
+
+nav:active .line1 {
+  transform: rotate(0deg) translate(-5px, 6px);
+}
+
+nav:active .line2 {
+  opacity: 0;
+}
+
+nav:active .line3 {
+  transform: rotate(90deg) translate(-5px, 5px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+nav:active {
+  transform: translateX(0%);
+}
+
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+} */
+
+
+/* ********************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    /* overflow-y: hidden; */
+    font-family: 'Italiana', serif;
+/* font-family: 'Poppins', sans-serif; */
+    width: 80vw;
+    height: 80vh;
+    color: aliceblue;
+    background: #ffcc9cdc
+    /* background-color: #f1dcd1; */
+    /* background: linear-gradient(to right ,#f2a65a,#772f1a); */
+    /* background: linear-gradient(to right ,#491a01,#4a1100); */
+    /* background-color: rgb(45, 35, 21); */
+    /* background-color: rgb(38, 41, 43); */
+}
+
+
+
+/* .example::-webkit-scrollbar {
+  display: none;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #60300d85;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d08e13e1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b530cc9;
+}
+
+
+
+
+.navbar {
+    
+    display: flex;
+    position:fixed;
+    background-color: #eba78a;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 10px 0 ;
+}
+
+.content{
+    max-width: 1250px;
+    padding: 0px 30px;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav li{
+    list-style: none;
+}
+.navbar-nav a {
+    top: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 15px;
+    position: relative;
+}
+
+.navbar-nav li a{
+    text-decoration: none;
+
+}
+
+.navbar .navbar-nav{
+    display: inline-flex;
+
+}
+
+
+
+
+.banner{
+    height: 100vh;
+    background:url(photos/bkg-3.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar-nav a::before {
+	content: "";
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.5s linear;
+}
+.navbar-nav a:hover:before {
+	width: 75%;
+    height: 2px;
+    background-color: goldenrod;
+}
+.navbar .navbar-brand img{
+	/* color: #fff; */
+    border-radius: 30px;
+    width: 4rem;
+    margin:0 150px;    
+    /* height: 5rem; */
+	font-size: 2px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #171717;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: brown;
+}
+
+.nav-link .bx{
+    font-size: 22px;
+    
+}
+
+
+.nav-links li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1d1c1c;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 10%;
+    height: 2px;
+    background-color: #a2ff55;
+    transition: all 0.5s linear;
+}
+.nav-links li a:hover:before {
+    width: 8%;
+    height: 2px;
+    background-color: rgb(203, 178, 178);
+}
+
+
+
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+@media (max-width:868px){
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .navbar-nav{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #8f5959;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .navbar-nav.active{
+        left: 0%;
+    }
+
+    .navbar .navbar-nav li{
+        margin-top: 35px;
+    }
+    /* .navbar .navbar-nav li a{
+        
+    } */
+}
+
+
+
+
+
+
+
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50%;
+  width: 50%;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1d1c1c;
+    transition: color 0.3s ease-in-out;
+}
+
+/* .nav-links li a::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #a2ff55;
+    transition: all 0.5s linear;
+}
+.nav-links li a:hover:before {
+    width: 8%;
+    height: 2px;
+    background-color: red;
+} */
+
+
+.nav-links a:hover {
+  color: #c57804;
+}
+
+/*Three Lines start  */
+/* .line{
+    position: absolute;
+    top: 22%;
+    left: 8%;
+}
+.line .box1{
+    width: 10px;
+    height: 10px;
+    background-color:rgb(44, 147, 251);
+}
+.line .box2{
+    width: 60px;
+    height: 2px;
+    background-color:rgb(14, 239, 172);
+}
+.line .box3{
+    width: 100px;
+    height: 2px;
+    background-color:rgb(11, 251, 19);
+} */
+/*Three Lines end */
+
+/*right coloum of container start  */
+/* .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 120px;
+} */
+/* .left{
+    margin-top: 180px;
+    font-size: 2.3rem;
+    flex-basis: 35%;
+}
+.right{
+    flex-basis: 50%;
+}
+.right img{
+    height: 50vh;
+    width: 100%;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#0004) ;
+}
+.left h1{
+    line-height:5rem;
+} */
+
+/* Bouncy Word Animation */
+
+/* .left  span{
+    position: relative;
+    animation: bounce 0.3s infinite alternate;
+        text-shadow:0 1px 0 #ccc ,0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc,0 6px 0 transparent, 0 7px 0 transparent,0 9px 0 transparent,0 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.left .btn button{
+    margin-top: 30px;
+    color:aliceblue ;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 170px;
+    background-color: #2E4F4F;
+    cursor: pointer;
+    border-radius: 10px;
+
+} */
+
+
+.main-bkg{
+  background: url(photos/main-bkg-6.jpg) repeat-x fixed 105%;
+  height: 100vh;
+  width: 99.35vw;
+  /* margin-bottom: -80px; */
+}
+
+.main-bkg img{
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* margin-left: 140px; */
+  margin-top: 0px;
+}
+
+@media (max-width:868px){
+  .main-bkg{
+    width: 90vw;
+    display:flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .main-bkg img
+{  
+  width: 40vw;
+}
+}
+
+.scope {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  /* flex-basis: 10%; */
+  margin:250px 43% ;
+  /* justify-content: center; */
+  transform-style: preserve-3d;
+  animation: slid 30s linear infinite;
+}
+
+.scope h1{
+    margin-top: -100px;
+}
+.scope h3{
+  font-size:1rem ;
+  color: black;
+  font-weight:600 ;
+    /* margin-top: 100px;
+    font-size: 1rem; */
+}
+
+.scope span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+
+.scope span p{
+    color: rgb(224, 15, 15);
+    font-size: 1.4rem;
+}
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition:  1s;
+  -webkit-box-reflect:below 5px linear-gradient(transparent,transparent,#0004) ;
+}
+.scope span:hover img {
+  transform: translateY(-20px) scale(1.1);
+}
+
+.scope span:hover h3{
+    position: relative;
+    margin-top: 100px;
+    font-size: 1rem;
+    transition: linear 0.3s;
+}
+
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.three-d-section{
+  background: #ffcc9cdc;
+  width: 99.3vw;
+  height: 100vh;
+  margin-top: -95px;
+  /* padding: px; */
+  
+}
+
+.three-d-glry-sec{
+  position: relative;
+  top: 30px;
+    border-radius: 30px;
+    /* background-color: #ddc096; */
+    width: 80vw;
+    height:90vh;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.glry-title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-top: 80px; */
+    margin-bottom: -100px;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+.glry-title h1{
+    height: 60px;
+    /* background-color: #804d2d; */
+    line-height: 2px;
+    text-underline-offset:10px ;
+    text-decoration-line: underline overline ;
+    text-decoration-style: double;
+    text-decoration-color: #ebb35eb4;
+    margin-top: 40px;
+    padding-top: 28px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+
+
+
+.product-main{
+  /* background-color: #e980748b; */
+  background:url(photos/main-bkg-3.jpg) no-repeat fixed 100%;
+  /* background-size: contain; */
+  background-size: 100%;
+
+  background-position: center;
+  width: 99.35vw;
+  height: 165vh;
+  /* position: relative; */
+  /* top: 30px; */
+}
+
+.products{
+    border-radius: 30px;
+    /* background-color: rgba(89, 147, 101, 0.577); */
+    width: 80vw;
+    height:145vh;
+    position: relative;
+    top: 70px;
+    margin-top: 0px;
+    margin-left: 150px;
+}
+.products-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 80px; */
+    margin-bottom: -100px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.card-group{
+    color: #1d1c1c;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    padding-top: 40px;
+    padding-inline: 30px;
+    /* height: 100vh; */
+}
+
+.card-group .card img{
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card-group .card{
+    border-radius: 10px;
+    height: 55vh;
+    padding: 0 20px;
+    margin-inline: 20px;
+    transition: linear .3s;
+    background-color: #ffffffdc;
+}
+
+.card-group .card a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-group .card a h4{
+    font-weight: 600;
+    background-color: rgb(255, 179, 64);
+    width: 80%;
+    font-size: 1.4rem;
+    color: #3b1704;
+    height: 35px;
+    margin:0 auto;
+    padding-top:2px;
+    text-align: center;
+    border-radius: 10px;
+    transition: linear .3s;
+}
+
+.card-group .card .card-body{
+    /* padding-inline:10px ; */
+}
+.products-title h1{
+    height: 60px;
+    color: #000;
+    /* background-color: #ffcd9e; */
+    line-height: 5px;
+    text-underline-offset:10px ;
+    text-decoration-line: underline overline ;
+    text-decoration-style: double;
+    text-decoration-color: #d58206e0;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    /* margin-left: 20px; */
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: #f8eae7;
+}
+.card:hover img{
+    transform: scale(.95);
+    transition: linear 0.5s ;
+    cursor: pointer;
+}
+.card:hover a h4{
+    transform: scale(.95);
+    background-color: #3b1704;
+    color: #f9a424;
+    transition: linear 0.5s ;
+    cursor: pointer;
+    
+}
+
+
+.testinomials{
+    overflow:hidden;
+    border-radius: 30px;
+    /* background-color: rgba(105, 81, 50, 0.368); */
+    width: 80vw;
+    height:95vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+}
+
+.testinomials-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 80px; */
+    margin-bottom: -100px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.testinomials-title h1{
+  height: 60px;
+  color:#3b1704;
+    /* background-color: #000; */
+    line-height: 5px;
+    text-underline-offset:10px ;
+    text-decoration-line: underline overline ;
+    text-decoration-style: double;
+    text-decoration-color: #d58206e0;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.testinomials .carousel{
+    height: 60vh;
+    width: 50vw;
+    margin: 100px auto;
+}
+
+.carousel-item .d-block{
+    margin:50px auto;
+    border-radius: 50px;
+}
+
+.carousel-item p{
+    width: 25vw;
+    margin-inline: auto;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+} 
+.carousel-item h3{
+    text-align: center;
+    font-weight: 600;
+    color: #c57804;
+    letter-spacing: 1.5px;
+} 
+
+
+/* Footet section */
+.footer{
+    background-color: #08263e;
+    /* background-color: rgb(20, 12, 45); */
+    color: #d3d3d3;
+    height: 400px;
+    position:relative;
+    width: 124.2%;
+}
+
+.footer .footer-content{
+    border: none;
+    height:350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    /* border-right: 1px solid white; */
+    padding: 25px;
+}
+
+
+.footer .footer-bottom{
+    background-color:#08263e;
+    color: #e0dcdc;
+    border-top: 1px solid white;
+    height: 50px;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+    color: rgb(231, 175, 34);
+}
+
+.footer .footer-content .about h1 span{
+    color: cyan;
+}
+
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1r8m;
+    margin-bottom: 6px;
+}
+
+.footer .footer-content .about .socials a{
+    border: 1px solid grey;
+    color: brown;
+    width: 45px;
+    height: 41px;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.footer .footer-content .about .socials a .fa-whatsapp{
+    color: #009d2f;
+}
+.footer .footer-content .about .socials a .fa-facebook{
+    color: #0055d5;
+}
+
+.footer .footer-content .about .socials a:hover{
+    border:1px solid white ;
+    color: white ;
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.footer .footer-content .links iframe{
+    width: 350px;
+    height: 250px;
+}
+
+.footer .footer-content .Contact-frm form{
+        /* background-color: rgba(165, 42, 42, 0.356); */
+        display: grid;
+        /* margin: 25px 0; */
+        /* margin-top: 30px; */
+}
+
+.footer .footer-content .Contact-frm form input:hover,textarea:hover{
+  transform: scale(.99);
+  background-color:#f5e9d9;
+}
+
+.footer .footer-content .Contact-frm form .btn{
+    background-color: white;
+}
+
+.footer .footer-content .Contact-frm form .btn:hover{
+  color: white;
+  background-color:#b55b2b;
+  transform: scale(.95);
+
+}
+
+
+
+@media (max-width:868px){
+
+}
+
+/* Bounce word animation */
+/* @keyframes bounce {
+    100%{
+        top:-2px;
+        text-shadow:0 1px 0 #ccc ,0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc,0 6px 0 transparent, 0 7px 0 #ccc,0 9px 0 transparent,0 50px 25px rgba(0, 0, 0, 0.2);
+
+    }
+
+}
+
+.left  span:nth-child(2){
+    animation-delay: 0.1s;
+}.left span:nth-child(3){
+    animation-delay: 0.2;
+}.left span:nth-child(4){
+    animation-delay: 0.3s;
+}.left span:nth-child(5){
+    animation-delay: 0.4s;
+}.left span:nth-child(6){
+    animation-delay: 0.5s;
+}.left span:nth-child(7){
+    animation-delay: 0.6s;
+}.left span:nth-child(8){
+    animation-delay: 0.7s;
+}.left span:nth-child(9){
+    animation-delay: 0.8s;
+} */
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <!-- <nav>
+        <div class="logo">
+            <img src="photos/main-logo.png" alt="">
+           
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav> -->
+
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        
+        <a class="navbar-brand" href="#"><img src="/photos/main-logo.png""></a> 
+    
+        <div class="content">
+            <ul class="navbar-nav menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>	
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#our-products">Products</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#">Online</a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rotating-glry">Gallery</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact</a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class='bx bx-search-alt'></i></a>
+					</li>
+                    
+                </ul>
+            </div>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars" style="display: flex ;margin-left: -100px;"></i>
+            </div>
+	</nav>
+
+
+<div class="main-bkg" style="">
+    <img src="photos/page-1.jpeg" alt="" style="">
+</div>
+
+<!--3D Galler  title-->
+<div class="three-d-section">
+  <div class="three-d-glry-sec" id="rotating-glry" >
+    <div class="glry-title" style="margin-left:30%;">
+        <strong> <h1 style="color: #3b1704;text-align: center;">
+            MH PAPER BAG SOLUTION
+        </h1></strong>
+    </div>
+    
+    <!-- 3D gallery Rotation -->
+    <div class="scope">
+        <strong> <h1 style="color: #393737;text-shadow: 1px 1px 2px brown, 0 0 0em gold, 0 0 0.1em gold;text-align: center;">
+            MH PAPER BAG SOLUTION
+        </h1></strong>
+        <span style="--i:1;"><img src="photos/gallery-1.jpg" alt="not found">
+        <h3 >
+            hand bag
+        </h3>
+        </span>
+        <span style="--i:2;"><img src="photos/gallery-2.jpg" alt="not found">
+            <h3 >
+                Luxury bag
+            </h3>
+        </span>
+        <span style="--i:3;">
+            <!-- <img src="photos/gallery-3.jpg" alt="not found"> -->
+            <img src="photos/merchandise img.webp" alt="not found">
+            <h3 >
+                Printed Merchandie Bag
+            </h3>
+        </span>
+        <span style="--i:4;">
+            <img src="photos/gallery-4.jpg" alt="not found">
+            <h3 >
+                Branding bag
+            </h3>
+        </span>
+        <span style="--i:5;"><img src="photos/luxury-img-1.jpg" alt="not found">
+            <h3 >
+                Duplex bag
+            </h3>
+        </span>
+        <span style="--i:6;"><img src="photos/luxury-img-3.jpg" alt="not found">
+            <h3 >
+               Kraft bag
+            </h3>
+        </span>
+        <span style="--i:7;"><img src="photos/wedding-1.jpg" alt="not found">
+            <h3 >
+                wedding Invitation bag
+            </h3>
+        </span>
+        <span style="--i:8;"><img src="photos/luxury-img-2-2.jpg" alt="not found">
+            <h3 >
+                Shopping bag
+            </h3>
+        </span>
+      </div>
+    </div>
+</div>
+
+
+<div class="product-main">
+  <div class="products" id="our-products" >
+    <div class="products-title">
+        <h1>OUR PRODUCTUS</h1>
+    </div>
+
+    <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="photos/img-1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <a href="index2.html">
+            <h4 class="card-title">kraft Bag</h5>
+            </a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="photos/shopping-3-3.jpg" alt="Card image cap" style="border-top-left-radius: 40px;">
+          <div class="card-body">
+            <a href="index2.html">
+                <h4 class="card-title">Shopping bags</h4>
+            </a>
+            
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="photos/shopping-1-1.jpg" alt="Card image cap" style="border-top-left-radius: 40px;">
+          <div class="card-body">
+            <a href="index2.html">
+            <h4 class="card-title">Promotion bag</h4>
+        </a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd ROW  Products card-->
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="photos/gift-1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <a href="index2.html">
+            <h4 class="card-title">Party bags</h4>
+        </a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="photos/wedding-1.jpg" alt="Card image cap" style="border-top-left-radius: 40px;">
+          <div class="card-body">
+            <a href="index2.html" class="wedding-bag">
+            <h4 class="card-title">Wedding Invitation bags</h4>
+        </a>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="photos/jumbo-1.jpg" alt="Card image cap" style="border-top-left-radius: 40px;">
+          <div class="card-body">
+            <a href="index2.html" class="duplex-bag">
+            <h4 class="card-title">Duplex and Jumbo bags</h4>
+        </a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content..</p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div class="testinomials">
+
+    <div class="testinomials-title">
+        <h1>TESTINOMIALS</h1>
+    </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-50 h-55" src="/photos/img-1.jpg" alt="First slide">
+        <p class="testinomial-para-1" >
+            "Good Quality of Paper bag at Wholesale rate,which are Useful,Handy in nature and Recyclable."
+            <h3>Vishal</h3>
+        </p>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-50" src="photos/img-3.jpg" alt="Second slide">
+        <p class="testinomial-para-2" >
+            "I had ordered printed bags for promotion basis. They were really trendy and durable."
+            <h3>Shilpa</h3>
+        </p>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-50" src="photos/gallery-2.jpg" alt="Third slide">
+        <p class="testinomial-para-3" >
+            "Good Quality of Paper bag using thick and thin both kind of paper,since a long time ,which are 100% Bio-Degradable."
+            <h3>OM</h3>
+        </p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black"></span>
+      <span class="sr-only" style="background-color: black">Next</span>
+    </a>
+  </div>
+</div>
+<!-- 
+<section class="testimonial-section">
+  <h2 class="testimonial-title">What my clients are saying?</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-card">
+          <div class="testimonial-image">
+            <img src="/images/saatvik.webp" alt="testimonial 3" />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              “Anurag is a talented, committed individual who will leave no
+              stone unturned in his pursuit to provide with the best. His
+              attention to detail and in-depth experience in the of web
+              development is indeed commendable. He has exhibited exemplary
+              skills in the field, and I hope to see all the great projects
+              coming up!”
+            </p>
+            <h2>Saatvik Nagpal</h2>
+            <h5>Founder, EazyGrad</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-card">
+          <div class="testimonial-image">
+            <img src="/images/kira.webp" alt="testimonial 1" />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              “Anurag was a wonderful developer to work with! He anticipated
+              everything I need to consider for my website. He also went
+              the extra mile and added details that I hadn't considered! He
+              is helping my business grow, and I will definitely work with
+              him again!”
+            </p>
+            <h2>Kira Bragg</h2>
+            <h5>English Mentor</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-card">
+          <div class="testimonial-image">
+            <img src="/images/Srihari.webp" alt="testimonial 2" />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              “I worked with Anurag to make my website. I
+              am speechless by looking at his work ethic and dedication.
+              Working with him was the best decision I made.”
+            </p>
+            <h2>Srihari Kestur </h2>
+            <h5>Founder Harigurus</h5>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-card">
+          <div class="testimonial-image">
+            <img src="/images/gautham.webp" alt="testimonial 3" />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              “I can bet that it's too hard to find professional developers
+              like Anurag. He could peek inside my mind and made the site
+              exactly as I wanted. Much appreciated”
+            </p>
+            <h2>Gautham Chengappa</h2>
+            <h5>Web Developer, UX Consultancy</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section> -->
+
+<div class="footer" style="" id="contact-us">
+    <div class="footer-content" style="" >
+        <div class="footer-section about" style="">
+            <img class="logo" src="photos/main-logo.png" style="width: 100px;">
+            <p>
+                MH paper bag solution is well experienced paper bag manufacturer.We have our main focus on eco-friendly paper bag,which reusable ang recyclable. 
+            </p>
+            <div class="contact">
+                <span><i  class="fas fa-phone"></i>&nbsp;+91-8319688692</span>
+                <span><i  class="fas fa-envelope"></i>&nbsp;anujjhariya42@gmail.com</span>
+            </div>
+            <div class="socials">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links" style="">
+            <h2>Reach us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9862515260174!2d75.8238104147636!3d22.728752385102617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd7783a65d31%3A0x5e235569aa76927b!2sLOKNAYAK%20NAGAR!5e0!3m2!1sen!2sin!4v1679433986475!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-section Contact-frm" style="">
+            <h2>Get in Touch with Us</h2>
+            <form action="index.html" method="post">
+                <input type="email" name="email" id="" class="text-input contact-input" placeholder="Your email ID..." style="font-weight: 600;color: #171717;padding-left: 5px;">
+                <br>
+                <textarea name="message" class="text-input contact-input" id="" rows="6" cols="30" placeholder="Your message..." style="font-weight: 900;color: #171717; padding-left: 5px;" ></textarea>
+                <br>
+                <button type="submit" class="btn btn-big">
+                    <i class="fas fa-envelope">Send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom" style="">
+        &copy; anujjhariya42.com | Designed by Anuj Jhariya
+    </div>
+</div>
+
+
+
+      <!-- <div class="line">
+        <div class="box1"></div><br>
+        <div class="box2"></div><br> 
+        <div class="box3"></div>
+      </div>
+
+      <div class="container">
+          <div class="left animate__animated animate__jackIntheBox">
+            <p>Say <br> <strong ><span style="color: #f42237;" >N</span><span>O</span> </strong> to
+            <h1 ><span style="color: #1af688;"> P </span>
+                <span>L</span> 
+                <span>A </span>
+                <span>S </span>
+                <span>T </span>
+                <span>I </span>
+                <span>C </span><br><span href="" style="color: #07f1ce;">B</span><span>A</span><span>G</span></h1>
+            </p> 
+
+            <p class="para2" style="font-size: 1.5rem;"><br>
+                Use Paper bags <br>Get our Premium eco-friendly bag and show of your Green side. <br>
+            </p>
+            <div class="btn">
+               <button>Explore More</button> 
+
+            </div>
+          </div>
+          <div class="right">
+            <img src="photos/img-5.jpg" alt="" class="animate__animated animate__lightSpeedInRight">
+          </div>
+      </div> -->
+      <!-- <section class="upper-section">
+          <div class="right-col">
+              <img src="photos/img-.jpg" alt="">
+              <img src="photos/luxury-img-2.jpg" alt="">
+            </div>
+            <div class="left-col" style="color:#f1f1f1;">
+                <p class="para1" >
+                    Say<span style="color: red;"> NO</span> to <h2 style="color: cyan;"> <Strong> PLASTIC</Strong> </h2> <h2 style="color: cyan;">BAG</h2>
+                </p>
+                <p>
+                    We Provide Exclusive range of Eco-Friendly Paper Bags <br>
+                    If you are looking for a paper bag printed for a product of a certain <br> shape, then take a look at our bag boxes and bottle bags.
+                </p>
+            </div>
+            
+            <div class="right-img">
+            </div>
+      </section> -->
+      
+
+
+
+
+      
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+      menu.classList.add("active")
+      menuBtn.classList.add("hide")
+  }
+  cancelBtn.onclick = ()=>{
+      menu.classList.remove("active")
+      menuBtn.classList.remove("hide")
+  }
+</script>
+
+</html>
